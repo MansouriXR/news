@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HS 2025 AR View</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
     <script type="module" src="mod.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -193,10 +194,10 @@
     <div id="container" class="relative">
         <!-- Model Background Logo -->
         <div class="model-background">
-            <img src="compressed/MG_Logo_Jiad motors (1).svg" alt="MG Logo Background">
+            <img src="./compressed/MG_Logo_Jiad motors (1).svg" alt="MG Logo Background">
         </div>
         <!-- MG Logo -->
-        <img src="compressed/MG_Logo_Jiad motors (1).png" alt="MG Logo" class="absolute top-4 left-4 w-40 z-10">
+        <img src="./compressed/MG_Logo_Jiad motors (1).png" alt="MG Logo" class="absolute top-4 left-4 w-40 z-10">
 
         <model-viewer 
             ar 
@@ -206,7 +207,7 @@
             camera-orbit="180deg 75deg 8m"
             camera-target="0m 1m 0m"
             field-of-view="30deg"
-            src="hss.compressed.glb"
+            src="./hss.compressed.glb"
             loading="eager"
             reveal="auto"
             preload
@@ -214,7 +215,7 @@
             exposure="1"
             shadow-intensity="1"
             environment-image="neutral"
-            poster="compressed/MG_Logo_Jiad motors (1).png"
+            poster="./MG_Logo_Jiad motors (1).png"
             min-camera-orbit="auto auto 2m"
             max-camera-orbit="auto auto 20m"
             orbit-sensitivity="1"
@@ -337,7 +338,7 @@
 
             </script>
             <div id="qrCodeContainer" class="fixed left-1/2 top-24 -translate-x-1/2 flex flex-col items-center z-50">
-                <img src="compressed/qr1.png" alt="Scan QR Code" class="w-48 h-48">
+                <img src="./compressed/qr1.png" alt="Scan QR Code" class="w-48 h-48">
             </div>
 
             <button slot="ar-button" class="fixed left-1/2 bottom-24 -translate-x-1/2 bg-gradient-to-r from-red-500 to-red-700 hover:from-red-600 hover:to-red-800 text-white font-bold py-4 px-8 rounded-2xl shadow-2xl transition-all duration-500 ease-in-out transform hover:scale-110 hover:rotate-1 active:scale-95 flex items-center space-x-3 animate-pulse hover:animate-none hover:ring-4 hover:ring-red-300 hover:ring-opacity-50 backdrop-blur-sm bg-opacity-90 z-50">
@@ -353,7 +354,7 @@
         <div class="loading-bar">
             <div class="bg-white p-6 rounded-lg shadow-xl">
                 <div class="flex flex-col items-center space-y-4">
-                    <img src="compressed/MG logo_red 1.svg" alt="Loading Logo" class="loading-logo">
+                    <img src="./compressed/MG logo_red 1.svg" alt="Loading Logo" class="loading-logo">
                     <div class="progress-bar">
                         <div class="progress-bar-fill" id="progressBarFill"></div>
                     </div>
